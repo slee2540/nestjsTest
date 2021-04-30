@@ -9,7 +9,6 @@ export class UserResolver {
 
   @Mutation(() => User)
   async createUser(@Args('input') input: CreateUserInput) {
-    console.log('=======>', input);
     return this.userService.create(input);
   }
 

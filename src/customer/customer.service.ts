@@ -1,6 +1,5 @@
 import { Injectable, Inject } from '@nestjs/common';
 import { Model } from 'mongoose';
-import { InjectModel } from '@nestjs/mongoose';
 import { Customer } from './interface/customer.interface';
 import { CreateCustomerDTO } from './dto/create-customer.dto';
 

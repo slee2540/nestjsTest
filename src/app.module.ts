@@ -12,13 +12,13 @@ import { CustomerModule } from './customer/customer.module';
 
 @Module({
   imports: [
-    CustomerModule,
     GraphQLModule.forRoot({
       autoSchemaFile: 'schema.gql',
     }),
+    CustomerModule,
     MoviesModule,
-    DatabaseModule,
     UserModule,
+    DatabaseModule,
   ],
   controllers: [AppController],
   providers: [

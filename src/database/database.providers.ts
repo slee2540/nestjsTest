@@ -9,11 +9,13 @@ export const databaseProviders = [
         useNewUrlParser: true,
         useUnifiedTopology: true,
       });
-
       result.then((res) => {
-        console.log('준비 상태:', res.connection.readyState);
+        console.log(
+          '준비 상태:',
+          res.connection.readyState,
+          MONO_DB_CONNECTION_STRING,
+        );
       });
-
       return result;
     },
   },
